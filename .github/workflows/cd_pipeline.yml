@@ -17,12 +17,3 @@ jobs:
     - run: |
         docker build . -t cloudsystem.azurecr.io/identity:${{ github.sha }}  -f ITProjectPriceCalculationManager.AuthServer/Dockerfile
         docker push cloudsystem.azurecr.io/identity:${{ github.sha }}
-
-    - uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'IdentityManager'
-        images: 'cloudsystem.azurecr.io/identity:${{ github.sha }}'
-      
-    - name: Azure logout
-      run:
-        az logout
