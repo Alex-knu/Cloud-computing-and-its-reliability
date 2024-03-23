@@ -4,17 +4,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.DTOModels", "ITProjectPriceCalculationManager.DTOModels\ITProjectPriceCalculationManager.DTOModels.csproj", "{87F37E2A-BDA4-46C5-BDEB-F367866C2AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.Router.API", "ITProjectPriceCalculationManager.Router.API\ITProjectPriceCalculationManager.Router.API.csproj", "{BBC28BA0-96C3-4916-A3CA-D88126EC20EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.ITProjectsManager.API", "ITProjectPriceCalculationManager.ITProjectsManager.API\ITProjectPriceCalculationManager.ITProjectsManager.API.csproj", "{751F0A8B-AD0E-479B-8A34-8E86477DA096}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.ITProjectsCalculator.API", "ITProjectPriceCalculationManager.ITProjectsCalculator.API\ITProjectPriceCalculationManager.ITProjectsCalculator.API.csproj", "{720F4871-B042-4D03-A2CA-D8320A55E219}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.AuthServer", "ITProjectPriceCalculationManager.AuthServer\ITProjectPriceCalculationManager.AuthServer.csproj", "{982ABBF0-FCD2-4E4A-8510-463526A63CE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.Extentions", "ITProjectPriceCalculationManager.Extentions\ITProjectPriceCalculationManager.Extentions.csproj", "{8C72D8B2-1601-4031-A847-F06C7998375F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITProjectPriceCalculationManager.EvaluatorManager.API", "ITProjectPriceCalculationManager.EvaluatorManager.API\ITProjectPriceCalculationManager.EvaluatorManager.API.csproj", "{C8240EDC-BA7A-440B-8AD9-D92112CC69D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
