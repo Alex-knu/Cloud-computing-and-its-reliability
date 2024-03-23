@@ -1,0 +1,37 @@
+version: '3.7'
+
+networks:
+  security-net:
+    driver: bridge
+  security-database-net:
+    driver: bridge
+  front-net:
+    driver: bridge
+  service-net:
+    driver: bridge
+  it_projects_manager-database-net:
+    driver: bridge
+
+volumes:
+  it-projects-manager-data:
+    external: false
+  auth-server-data:
+    external: false
+
+services:
+  it_project_price_calculation_manager.auth_server:
+    image: ${DOCKER_REGISTRY-}it_project_price_calculation_manager.auth_server
+    restart: always
+    build: 
+      context: .
+      dockerfile: ITProjectPriceCalculationManager.AuthServer/Dockerfile
+    ports:
+      - "5010:80"
+      - "5011:443"
+    networks:
+      security-database-net:
+      front-net:
+        aliases:
+          - auth_server
+    volumes:
+      - $HOME/.microsoft/usersecrets/:/root/.microsoft/usersecrets/:ro
