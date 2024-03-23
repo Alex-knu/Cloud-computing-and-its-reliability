@@ -30,7 +30,7 @@ jobs:
     
   build_docker:
     runs-on: ubuntu-latest
-    needs: [build_angular, build_dotnet, build_python]
+    needs: [build_dotnet]
 
     steps:
       - name: Checkout docker
